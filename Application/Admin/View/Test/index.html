@@ -1,0 +1,45 @@
+<extend name="Index:index"/>
+
+<block name="right">
+    <script>
+
+        //监听上传进度
+        //        $(document).ready(function () {
+        function doUpload() {
+//            $("#upfile").on('click', function () {
+            var formData = new FormData();
+            formData.append("CustomField", "This is some extra data");
+            // 自动搜索#form里面的name值不为空的input(注意：type=file的input会被搜索到，但不能携带文件流，所以在下面我主动添加进了formData) <=ie9不支持FormData
+               formData.append('file', $("#file")[0].files[0]);
+//                formData.append('file', document.querySelector('[type=file]').files[0]);// 由于上面不会搜索到type=file的input，所以在这里将它主动添加到formData中(注意：需使用原生方式获取)
+            $.ajax({
+                type: 'POST',
+                url: "__URL__/up2",
+                data: formData,
+                dataType: 'json',
+                //用ajax的话：这几个参数应该是 要设置的：
+                cache: false,
+                enctype: 'multipart/form-data',
+                contentType: false,// 当有文件要上传时，此项是必须的，否则后台无法识别文件流的起始位置(详见：#1)
+                processData: false,// 是否序列化data属性，默认true(注意：false时type必须是post，详见：#2)
+                success: function (response) {
+                    if (response.status == 1) {
+                        //判断返回的status来确定文件是否上传成功，以及上传成功后要做的操作
+                    }
+                    alert("111" + response.msg);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert(XMLHttpRequest.status + "---------" + XMLHttpRequest.readyState + "----------" + textStatus);
+                }
+            });
+//            });
+//        });
+        }
+    </script>
+    <!--<form id="info" class="form-horizontal" role="form" action="__URL__/insertstudent" enctype="multipart/form-data"-->
+          <!--method="post">-->
+        <input id="file" type="file" name="file">
+        <input type="button" value="上传" onclick="doUpload()"/>
+    <!--</form>-->
+
+</block>

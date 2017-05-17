@@ -1,0 +1,12 @@
+.loginstyl{
+     width: 500px;
+     height: 300px;
+     box-shadow: 0 0 10px 10px #888;
+     margin: 150px auto 0 auto;
+     border-radius: 10px 0px;
+    padding: 20px;
+ }
+
+.rows{
+    margin: 10px auto 0 auto;
+}

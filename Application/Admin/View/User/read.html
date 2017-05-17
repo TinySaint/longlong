@@ -1,0 +1,160 @@
+<extend name="Index:index"/>
+
+
+<block name="right">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">学生列表</h3>
+        </div>
+        <script>
+            function searchinfo() {
+                var str = "";
+                var searchname = document.getElementById("searchname");
+                var introducename = document.getElementById("introducename");
+                var studyabroad = document.getElementById("studyabroad");
+                var state = document.getElementById("state");
+                var addtime = document.getElementById("addtime");
+                var lastcomment =document.getElementById("lastcomment");
+
+                if (!searchname.value == "") {
+                    str = str + "/name/" + searchname.value;
+                }
+                if (!introducename.value == "") {
+                    str = str + "/introducename/" + introducename.value;
+                }
+                if (!studyabroad.value == "") {
+                    str = str + "/studyabroad/" + studyabroad.value;
+                }
+                if (!state.value == "") {
+                    str = str + "/state/" + state.value;
+                }
+                if (!addtime.value == "") {
+                    str = str + "/addtime/" + addtime.value;
+                }
+                if (!lastcomment.value == "") {
+                    str = str + "/lastcomment/" + lastcomment.value;
+                }
+                window.location.href = "__URL__/read" + str;
+            }
+        </script>
+
+        <div class="panel-body">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">姓名:</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" placeholder="请输入名字" id="searchname" value="{$get.searchname}">
+                    </div>
+
+                    <label class="col-sm-1 control-label" style="width: 80px">顾问:</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" placeholder="请输入名字" id="introducename" value="{$get.introducename}">
+                    </div>
+                    <label class="col-sm-2 control-label">留学国家:</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" placeholder="请输入国家" id="studyabroad" value="{$get.studyabroad}">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">状态:</label>
+                    <div class="col-sm-2">
+                        <select type="text" class="form-control" id="state">
+                            <option value="">所有</option>
+                            <option value="1"
+                            <eq name="get.state" value="1">selected='selected'</eq>
+                            >未签约</option>
+                            <option value="2"
+                            <eq name="get.state" value="2">selected='selected'</eq>
+                            >待签约</option>
+                            <option value="3"
+                            <eq name="get.state" value="3">selected='selected'</eq>
+                            >已签约</option>
+                        </select>
+                    </div>
+                    <label class="col-sm-1 control-label" style="width: 100px">录入时间:</label>
+                    <div class="col-sm-2" style="width: 200px">
+                        <input type="date" class="form-control" placeholder="请输入名字" id="addtime" value="{$get.addtime}">
+                    </div>
+                    <label class="col-sm-1 control-label" style="width: 100px">跟进时间:</label>
+                    <div class="col-sm-2" style="width: 200px">
+                        <input type="date" class="form-control" placeholder="请输入名字" id="lastcomment" value="{$get.lastcomment}">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-7">
+                        <button class="btn btn-info btn-search" onclick="searchinfo()">搜索</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-1" style="min-width: 100px">详细信息</th>
+                        <th class="col-md-1" style="min-width: 100px">资源编号</th>
+                        <th class="col-md-1" style="min-width: 100px">录入时间</th>
+                        <th class="col-md-1" style="min-width: 100px">姓名</th>
+                        <th class="col-md-1" style="min-width: 100px">性别</th>
+                        <th class="col-md-1" style="min-width: 150px">联系方式</th>
+                        <th class="col-md-1" style="min-width: 50px">顾问</th>
+                        <th class="col-md-3" style="min-width: 100px">留学国家</th>
+                        <th class="col-md-1" style="min-width: 100px">留学时间</th>
+                        <th class="col-md-1" style="min-width: 100px">跟进时间</th>
+                        <th class="col-md-1" style="min-width: 100px">当前状态</th>
+
+                        <th class="col-md-1" style="min-width: 100px">删除</th>
+                    </tr>
+                    </thead>
+                    <volist name="studentinfo" id="vo">
+                        <tr>
+                            <td><a href="{:U('Admin/User/detailinfo',array('sid'=>$vo['sid']))}">详细信息</a></td>
+                            <td>{$vo['infotype']}</td>
+                            <td>{$vo['addtime']|date="Y-m-d H:i:s",###}</td>
+                            <td>{$vo['name']}</td>
+                            <td>{$vo['gender']}</td>
+                            <td>{$vo['telephone']}</td>
+                            <td>{$vo['introducename']}</td>
+                            <td>{$vo['studyabroad']}</td>
+                            <td>{$vo['abroaddate']}</td>
+                            <td>{$vo['lastcomment']|date="Y-m-d H:i:s",###}</td>
+                            <td>
+                                <switch name="vo.state">
+                                    <case value="1"><p style="color: dodgerblue">无效</p></case>
+                                    <case value="2"><p style="color: dodgerblue">联系不上</p></case>
+                                    <case value="3"><p style="color: dodgerblue">联系上</p></case>
+                                    <case value="4"><p style="color: dodgerblue">约来访</p></case>
+                                    <case value="5"><p style="color: dodgerblue">已来访</p></case>
+                                    <case value="6"><p style="color: dodgerblue">待签约</p></case>
+                                    <case value="7"><p style="color: dodgerblue">签约</p></case>
+                                    <case value="8"><p style="color: dodgerblue">缴费（押金）</p></case>
+                                    <case value="9"><p style="color: dodgerblue">缴费（首款）</p></case>
+                                    <case value="10"><p style="color: dodgerblue">缴费（全款）</p></case>
+                                    <case value="11"><p style="color: dodgerblue">通过</p></case>
+                                    <case value="12"><p style="color: dodgerblue">退款</p></case>
+                                    <case value="13"><p style="color: dodgerblue">归档</p></case>
+                                    <!--<case value="1"><p style="color: dodgerblue">修改信息</p></case>-->
+                                    <!--<case value="2"><p style="color: red">正在审核</p></case>-->
+                                    <!--<case value="3"><p style="color:seagreen">审核通过</p></case>-->
+                                    <default/>
+                                </switch>
+                            </td>
+
+                            <lt name="Think.session.admin_type" value="2">
+                                <td>
+                                    <a href="javascript:if(confirm('确定要删除吗?')) location='{:U('Admin/User/deleteinfo',array('sid'=>$vo['sid']))}'">删除</a>
+                                </td>
+                            </lt>
+                            <!-- <td><a href="__URL__/updateinfo">修改</a></td>
+                             <td><a href="__URL__/deteleinfo/">删除</a></td> -->
+                        </tr>
+                    </volist>
+                </table>
+            </div>
+            <div class="panel-footer">
+                <div class="result page">{$page}</div>
+            </div>
+        </div>
+    </div>
+</block>

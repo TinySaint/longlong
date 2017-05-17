@@ -1,0 +1,857 @@
+[ 2017-04-09T10:29:52+08:00 ] ::1 /thinkstudy/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008589s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `think_student`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.008333s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008389s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015275s ]
+
+[ 2017-04-09T10:29:54+08:00 ] ::1 /thinkstudy/index.php/Admin/User/read
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `think_student`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001850s ]
+
+[ 2017-04-09T10:29:57+08:00 ] ::1 /thinkstudy/index.php/Admin/User/updateinfo/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+ERR: 非法操作:updateinfo
+
+[ 2017-04-09T10:30:18+08:00 ] ::1 /thinkstudy/index.php/Admin/User/updateinfo/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+ERR: 非法操作:updateinfo
+
+[ 2017-04-09T10:58:46+08:00 ] ::1 /thinkstudy/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004954s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `think_student`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003012s ]
+
+[ 2017-04-09T10:59:04+08:00 ] ::1 /thinkstudy/index.php/Admin/User/read
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002062s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `think_student`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002015s ]
+
+[ 2017-04-09T10:59:06+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002103s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0087s ]
+NOTIC: [8] Undefined index: uid F:\newXAMPP\htdocs\thinkstudy\Application\Admin\Controller\UserController.class.php 第 46 行.
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `think_student` WHERE ( id=0 ) LIMIT 1  
+ERR: 1054:Unknown column 'id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `think_student` WHERE ( id=0 ) LIMIT 1  
+
+[ 2017-04-09T10:59:45+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001938s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002019s ]
+
+[ 2017-04-09T11:01:00+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003753s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Array to string conversion F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005290s ]
+
+[ 2017-04-09T11:08:31+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Array to string conversion F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001854s ]
+
+[ 2017-04-09T11:09:08+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Array to string conversion F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2017-04-09T11:43:03+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: ss F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 45 行.
+NOTIC: [8] Undefined variable: s F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 47 行.
+NOTIC: [8] Undefined variable: s F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 58 行.
+NOTIC: [8] Undefined variable: s F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 59 行.
+NOTIC: [8] Undefined variable: s F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 96 行.
+NOTIC: [8] Undefined variable: s F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 97 行.
+NOTIC: [8] Undefined variable: s F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 111 行.
+NOTIC: [8] Undefined variable: s F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 112 行.
+NOTIC: [8] Undefined variable: s F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 113 行.
+NOTIC: [8] Undefined variable: s F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 114 行.
+NOTIC: [8] Undefined variable: s F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2017-04-09T11:43:28+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: students F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 45 行.
+NOTIC: [8] Undefined index: uid F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+
+[ 2017-04-09T11:44:23+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: students F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 45 行.
+NOTIC: [8] Undefined index: uid F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-04-09T11:47:48+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001833s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+
+[ 2017-04-09T11:48:29+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+
+[ 2017-04-09T11:51:06+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001969s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-04-09T11:51:50+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001843s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=4 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: uid F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 46 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002416s ]
+
+[ 2017-04-09T12:00:35+08:00 ] ::1 /thinkstudy/index.php/Admin/User/insertstudent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0092s ]
+NOTIC: [8] Undefined index: validate F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `think_student` (`name`,`gender`,`dataofbirth`,`introducename`,`fixedline`,`telephone`,`registered`,`infotype`,`university`,`education`,`major`,`email`,`graduatedate`,`studyabroad`,`abroaddate`,`grade`,`accessory`,`sat1`,`sat1date`,`sat2`,`sat2date`,`toefl`,`toefldate`,`telts`,`teltsdate`,`gmat`,`gmatdate`,`grt`,`grtdate`,`lsat`) VALUES ('小小啊啊','男','2017-04-06','大大','13871881383','12874622019','时代发生的发生的','来电','啊啊时代发生的发生个','大专以下','阿什顿飞','asdfsfaaasdf@sf','2017-04-21','asdf','2017-04-15','66','','','2017-04-04','','2017-04-06','','2017-04-13','','2017-04-12','0000-00-00','2017-04-14','','2017-04-10','') [ RunTime:0.0907s ]
+NOTIC: [8] Use of undefined constant read - assumed 'read' F:\newXAMPP\htdocs\thinkstudy\Application\Admin\Controller\UserController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001679s ]
+
+[ 2017-04-09T12:00:36+08:00 ] ::1 /thinkstudy/index.php/Admin/User/read.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002073s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `think_student`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002161s ]
+
+[ 2017-04-09T12:03:06+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002196s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=5 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined index: uid F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 46 行.
+NOTIC: [8] Undefined index: lsatdata F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002373s ]
+
+[ 2017-04-09T12:03:27+08:00 ] ::1 /thinkstudy/index.php/Admin/User/insertstudent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002686s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0131s ]
+NOTIC: [8] Undefined index: validate F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `think_student` (`name`,`gender`,`dataofbirth`,`introducename`,`fixedline`,`telephone`,`registered`,`infotype`,`university`,`education`,`major`,`email`,`graduatedate`,`studyabroad`,`abroaddate`,`grade`,`accessory`,`sat1`,`sat1date`,`sat2`,`sat2date`,`toefl`,`toefldate`,`telts`,`teltsdate`,`gmat`,`gmatdate`,`grt`,`grtdate`,`lsat`) VALUES ('小小啊啊','男','2017-04-06','大大','13871881383','12874622019','时代发生的发生的','来电','啊啊时代发生的发生个','大专以下','阿什顿飞','asdfsfaaasdf@sf','2017-04-21','asdf','2017-04-15','66','','爱的风格的','2017-04-04','斯蒂芬森','2017-04-06','啊对方的','2017-04-13','爱上的方式','2017-04-12','阿凡达','2017-04-14','水电费','2017-04-10','但V中') [ RunTime:0.1022s ]
+NOTIC: [8] Use of undefined constant read - assumed 'read' F:\newXAMPP\htdocs\thinkstudy\Application\Admin\Controller\UserController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001738s ]
+
+[ 2017-04-09T12:03:28+08:00 ] ::1 /thinkstudy/index.php/Admin/User/read.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001721s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `think_student`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001954s ]
+
+[ 2017-04-09T12:04:00+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=6 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined index: lsatdata F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001794s ]
+
+[ 2017-04-09T12:04:03+08:00 ] ::1 /thinkstudy/index.php/Admin/User/insertstudent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001705s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0214s ]
+NOTIC: [8] Undefined index: validate F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '6' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_student` (`sid`,`name`,`gender`,`dataofbirth`,`introducename`,`fixedline`,`telephone`,`registered`,`infotype`,`university`,`education`,`major`,`email`,`graduatedate`,`studyabroad`,`abroaddate`,`grade`,`accessory`,`sat1`,`sat1date`,`sat2`,`sat2date`,`toefl`,`toefldate`,`telts`,`teltsdate`,`gmat`,`gmatdate`,`grt`,`grtdate`,`lsat`) VALUES ('6','小小啊啊去去去','男','2017-04-06','大大','13871881383','12874622019','时代发生的发生的','来电','啊啊时代发生的发生个','大专以下','阿什顿飞','asdfsfaaasdf@sf','2017-04-21','asdf','2017-04-15','66','','爱的风格的','2017-04-04','斯蒂芬森','2017-04-06','啊对方的','2017-04-13','爱上的方式','2017-04-12','2017-04-12','2017-04-14','水电费','2017-04-10','但V中')
+ERR: 1062:Duplicate entry '6' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_student` (`sid`,`name`,`gender`,`dataofbirth`,`introducename`,`fixedline`,`telephone`,`registered`,`infotype`,`university`,`education`,`major`,`email`,`graduatedate`,`studyabroad`,`abroaddate`,`grade`,`accessory`,`sat1`,`sat1date`,`sat2`,`sat2date`,`toefl`,`toefldate`,`telts`,`teltsdate`,`gmat`,`gmatdate`,`grt`,`grtdate`,`lsat`) VALUES ('6','小小啊啊去去去','男','2017-04-06','大大','13871881383','12874622019','时代发生的发生的','来电','啊啊时代发生的发生个','大专以下','阿什顿飞','asdfsfaaasdf@sf','2017-04-21','asdf','2017-04-15','66','','爱的风格的','2017-04-04','斯蒂芬森','2017-04-06','啊对方的','2017-04-13','爱上的方式','2017-04-12','2017-04-12','2017-04-14','水电费','2017-04-10','但V中')
+
+[ 2017-04-09T12:05:18+08:00 ] ::1 /thinkstudy/index.php/Admin/User/read.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `think_student`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001669s ]
+
+[ 2017-04-09T12:05:20+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001723s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=6 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined index: lsatdata F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001786s ]
+
+[ 2017-04-09T12:05:23+08:00 ] ::1 /thinkstudy/index.php/Admin/User/insertstudent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0097s ]
+NOTIC: [8] Undefined index: validate F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '6' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_student` (`sid`,`name`,`gender`,`dataofbirth`,`introducename`,`fixedline`,`telephone`,`registered`,`infotype`,`university`,`education`,`major`,`email`,`graduatedate`,`studyabroad`,`abroaddate`,`grade`,`accessory`,`sat1`,`sat1date`,`sat2`,`sat2date`,`toefl`,`toefldate`,`telts`,`teltsdate`,`gmat`,`gmatdate`,`grt`,`grtdate`,`lsat`) VALUES ('6','小小啊啊问我','男','2017-04-06','大大','13871881383','12874622019','时代发生的发生的','来电','啊啊时代发生的发生个','大专以下','阿什顿飞','asdfsfaaasdf@sf','2017-04-21','asdf','2017-04-15','66','','爱的风格的','2017-04-04','斯蒂芬森','2017-04-06','啊对方的','2017-04-13','爱上的方式','2017-04-12','2017-04-12','2017-04-14','水电费','2017-04-10','但V中')
+ERR: 1062:Duplicate entry '6' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_student` (`sid`,`name`,`gender`,`dataofbirth`,`introducename`,`fixedline`,`telephone`,`registered`,`infotype`,`university`,`education`,`major`,`email`,`graduatedate`,`studyabroad`,`abroaddate`,`grade`,`accessory`,`sat1`,`sat1date`,`sat2`,`sat2date`,`toefl`,`toefldate`,`telts`,`teltsdate`,`gmat`,`gmatdate`,`grt`,`grtdate`,`lsat`) VALUES ('6','小小啊啊问我','男','2017-04-06','大大','13871881383','12874622019','时代发生的发生的','来电','啊啊时代发生的发生个','大专以下','阿什顿飞','asdfsfaaasdf@sf','2017-04-21','asdf','2017-04-15','66','','爱的风格的','2017-04-04','斯蒂芬森','2017-04-06','啊对方的','2017-04-13','爱上的方式','2017-04-12','2017-04-12','2017-04-14','水电费','2017-04-10','但V中')
+
+[ 2017-04-09T12:06:20+08:00 ] ::1 /thinkstudy/index.php/Admin/User/insertstudent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002013s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0106s ]
+NOTIC: [8] Undefined index: validate F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '6' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_student` (`sid`,`name`,`gender`,`dataofbirth`,`introducename`,`fixedline`,`telephone`,`registered`,`infotype`,`university`,`education`,`major`,`email`,`graduatedate`,`studyabroad`,`abroaddate`,`grade`,`accessory`,`sat1`,`sat1date`,`sat2`,`sat2date`,`toefl`,`toefldate`,`telts`,`teltsdate`,`gmat`,`gmatdate`,`grt`,`grtdate`,`lsat`) VALUES ('6','小小啊啊问我','男','2017-04-06','大大','13871881383','12874622019','时代发生的发生的','来电','啊啊时代发生的发生个','大专以下','阿什顿飞','asdfsfaaasdf@sf','2017-04-21','asdf','2017-04-15','66','','爱的风格的','2017-04-04','斯蒂芬森','2017-04-06','啊对方的','2017-04-13','爱上的方式','2017-04-12','2017-04-12','2017-04-14','水电费','2017-04-10','但V中')
+ERR: 1062:Duplicate entry '6' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_student` (`sid`,`name`,`gender`,`dataofbirth`,`introducename`,`fixedline`,`telephone`,`registered`,`infotype`,`university`,`education`,`major`,`email`,`graduatedate`,`studyabroad`,`abroaddate`,`grade`,`accessory`,`sat1`,`sat1date`,`sat2`,`sat2date`,`toefl`,`toefldate`,`telts`,`teltsdate`,`gmat`,`gmatdate`,`grt`,`grtdate`,`lsat`) VALUES ('6','小小啊啊问我','男','2017-04-06','大大','13871881383','12874622019','时代发生的发生的','来电','啊啊时代发生的发生个','大专以下','阿什顿飞','asdfsfaaasdf@sf','2017-04-21','asdf','2017-04-15','66','','爱的风格的','2017-04-04','斯蒂芬森','2017-04-06','啊对方的','2017-04-13','爱上的方式','2017-04-12','2017-04-12','2017-04-14','水电费','2017-04-10','但V中')
+
+[ 2017-04-09T12:12:32+08:00 ] ::1 /thinkstudy/index.php/Admin/User/insertstudent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '6' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_student` (`sid`,`name`,`gender`,`dataofbirth`,`introducename`,`fixedline`,`telephone`,`registered`,`infotype`,`university`,`education`,`major`,`email`,`graduatedate`,`studyabroad`,`abroaddate`,`grade`,`accessory`,`sat1`,`sat1date`,`sat2`,`sat2date`,`toefl`,`toefldate`,`telts`,`teltsdate`,`gmat`,`gmatdate`,`grt`,`grtdate`,`lsat`) VALUES ('6','小小啊啊问我','男','2017-04-06','大大','13871881383','12874622019','时代发生的发生的','来电','啊啊时代发生的发生个','大专以下','阿什顿飞','asdfsfaaasdf@sf','2017-04-21','asdf','2017-04-15','66','','爱的风格的','2017-04-04','斯蒂芬森','2017-04-06','啊对方的','2017-04-13','爱上的方式','2017-04-12','2017-04-12','2017-04-14','水电费','2017-04-10','但V中')
+ERR: 1062:Duplicate entry '6' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_student` (`sid`,`name`,`gender`,`dataofbirth`,`introducename`,`fixedline`,`telephone`,`registered`,`infotype`,`university`,`education`,`major`,`email`,`graduatedate`,`studyabroad`,`abroaddate`,`grade`,`accessory`,`sat1`,`sat1date`,`sat2`,`sat2date`,`toefl`,`toefldate`,`telts`,`teltsdate`,`gmat`,`gmatdate`,`grt`,`grtdate`,`lsat`) VALUES ('6','小小啊啊问我','男','2017-04-06','大大','13871881383','12874622019','时代发生的发生的','来电','啊啊时代发生的发生个','大专以下','阿什顿飞','asdfsfaaasdf@sf','2017-04-21','asdf','2017-04-15','66','','爱的风格的','2017-04-04','斯蒂芬森','2017-04-06','啊对方的','2017-04-13','爱上的方式','2017-04-12','2017-04-12','2017-04-14','水电费','2017-04-10','但V中')
+
+[ 2017-04-09T12:12:38+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001864s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=6 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined index: lsatdata F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002007s ]
+
+[ 2017-04-09T12:12:42+08:00 ] ::1 /thinkstudy/index.php/Admin/User/updateinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001882s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_student` SET `name`='小小啊啊',`gender`='男',`dataofbirth`='2017-04-06',`introducename`='大大',`fixedline`='13871881383',`telephone`='12874622019',`registered`='时代发生的发生的',`infotype`='来电',`university`='啊啊时代发生的发生个',`education`='大专以下',`major`='阿什顿飞',`email`='asdfsfaaasdf@sf',`graduatedate`='2017-04-21',`studyabroad`='asdf',`abroaddate`='2017-04-15',`grade`='66',`accessory`='',`sat1`='爱的风格的',`sat1date`='2017-04-04',`sat2`='斯蒂芬森',`sat2date`='2017-04-06',`toefl`='啊对方的',`toefldate`='2017-04-13',`telts`='爱上的方式',`teltsdate`='2017-04-12',`gmat`='2017-04-12',`gmatdate`='2017-04-14',`grt`='水电费',`grtdate`='2017-04-10',`lsat`='但V中' WHERE `sid` = 6 [ RunTime:0.0941s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001995s ]
+
+[ 2017-04-09T12:12:43+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001830s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=6 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: lsatdata F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001919s ]
+
+[ 2017-04-09T12:12:45+08:00 ] ::1 /thinkstudy/index.php/Admin/User/read
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001764s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `think_student`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001982s ]
+
+[ 2017-04-09T12:12:49+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002979s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: lsatdata F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002272s ]
+
+[ 2017-04-09T12:12:52+08:00 ] ::1 /thinkstudy/index.php/Admin/User/updateinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001754s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0113s ]
+NOTIC: [8] Undefined index: validate F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_student` SET `name`='小小啊啊暗示法',`gender`='男',`dataofbirth`='2017-04-06',`introducename`='大大',`fixedline`='13871881383',`telephone`='12874622019',`registered`='时代发生的发生的',`infotype`='来电',`university`='啊啊时代发生的发生个',`education`='大专以下',`major`='阿什顿飞',`email`='asdfsfaaasdf@sf',`graduatedate`='2017-04-21',`studyabroad`='asdf',`abroaddate`='2017-04-15',`grade`='66',`accessory`='',`sat1`='爱的风格的',`sat1date`='2017-04-04',`sat2`='斯蒂芬森',`sat2date`='2017-04-06',`toefl`='啊对方的',`toefldate`='2017-04-13',`telts`='爱上的方式',`teltsdate`='2017-04-12',`gmat`='2017-04-12',`gmatdate`='2017-04-14',`grt`='水电费',`grtdate`='2017-04-10',`lsat`='但V中' WHERE `sid` = 6 [ RunTime:0.0790s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001796s ]
+
+[ 2017-04-09T12:12:53+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=6 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined index: lsatdata F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001799s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002227s ]
+
+[ 2017-04-09T12:12:55+08:00 ] ::1 /thinkstudy/index.php/Admin/User/read
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001675s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `think_student`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001790s ]
+
+[ 2017-04-09T12:13:34+08:00 ] ::1 /thinkstudy/index.php/Admin/User/edit/sid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `think_student` WHERE ( sid=5 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: lsatdata F:\newXAMPP\htdocs\thinkstudy\Application\Runtime\Cache\Admin\c5c8f88f4330c605468367c8bb60454a.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001865s ]
+
+[ 2017-04-09T12:13:50+08:00 ] ::1 /thinkstudy/index.php/Admin/User/updateinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003056s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0093s ]
+NOTIC: [8] Undefined index: validate F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\newXAMPP\htdocs\thinkstudy\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `think_student` SET `name`='小小啊啊',`gender`='女',`dataofbirth`='2017-04-06',`introducename`='水电费',`fixedline`='13871881383',`telephone`='12874622019',`registered`='时代发生的发生的',`infotype`='来电',`university`='啊啊时代发生的发生个',`education`='大专以下',`major`='阿什顿飞',`email`='asdfsfaaasdf@sf',`graduatedate`='2017-04-21',`studyabroad`='asdf',`abroaddate`='2017-04-15',`grade`='66',`accessory`='',`sat1`='安顺',`sat1date`='2017-04-04',`sat2`='阿什顿飞',`sat2date`='2017-04-06',`toefl`='阿什顿飞',`toefldate`='2017-04-13',`telts`='释放',`teltsdate`='2017-04-12',`gmat`='2017-04-12',`gmatdate`='2017-04-14',`grt`='水电费',`grtdate`='2017-04-10',`lsat`='水电费' WHERE `sid` = 5 [ RunTime:0.0631s ]
+NOTIC: [8] Use of undefined constant read - assumed 'read' F:\newXAMPP\htdocs\thinkstudy\Application\Admin\Controller\UserController.class.php 第 57 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001898s ]
+
+[ 2017-04-09T12:13:52+08:00 ] ::1 /thinkstudy/index.php/Admin/User/read.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002593s ]
+SQL: SHOW COLUMNS FROM `think_student` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `think_student`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002137s ]
+

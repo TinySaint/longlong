@@ -1,0 +1,18 @@
+[ 2017-04-22T14:48:50+08:00 ] ::1 /thinkstudy/Public/bootstrap-3.3.7-dist/js/bootstarp.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-22T14:56:21+08:00 ] ::1 /thinkstudy/Public/bootstrap-3.3.7-dist/js/bootstarp.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-22T15:33:35+08:00 ] ::1 /thinkstudy/Public/bootstrap-3.3.7-dist/js/bootstarp.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+ERR: 无法加载模块:Public
+
