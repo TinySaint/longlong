@@ -35,15 +35,28 @@
 </div>
 <div class="container">
     <div class="col-md-2 left" style="height: 100%">
-        <?php if($_SESSION['admin_type']< 2 ): ?><ul class="list-group">
-                <?php if(($_SESSION['admin_type']) == "0"): ?><li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">用户管理</a></li><?php endif; ?>
+        <?php if($_SESSION['admin_type']== 0 ): ?><ul class="list-group">
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">用户管理</a></li>
                 <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/adduser">添加用户</a></li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">学生管理</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">添加学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">待审核学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">审核通过学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">无效学生</a></li>
             </ul><?php endif; ?>
 
-        <ul class="list-group">
-            <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">学生管理</a></li>
-            <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">添加学生</a></li>
-        </ul>
+        <?php if($_SESSION['admin_type']== 1 ): ?><ul class="list-group">
+            <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">审核通过学生</a></li>
+            </ul><?php endif; ?>
+
+        <?php if($_SESSION['admin_type']== 2 ): ?><ul class="list-group">
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">学生管理</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">添加学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">审核通过学生</a></li>
+            </ul><?php endif; ?>
+
     </div>
     <div style="height: 100%"></div>
     <div class="col-md-10 right">
@@ -58,21 +71,21 @@
                 <input type="text" class="form-control" name="name" id="name"
                        placeholder="请输入名字">
             </div>
-            <div class="form-group">
-                <label class="col-sm-1 control-label ">性别:</label>
-                <div class="col-sm-2">
-                    <select name="gender" class="form-control">
-                        <option selected>男</option>
-                        <option>女</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label" style="width: 100px">出生日期:</label>
-                    <div class="col-sm-3">
-                        <input type="date" class="form-control" name="dataofbirth">
-                    </div>
-                </div>
+
+            <label class="col-sm-1 control-label ">性别:</label>
+            <div class="col-sm-2">
+                <select name="gender" class="form-control">
+                    <option selected>男</option>
+                    <option>女</option>
+                </select>
             </div>
+
+            <label class="col-sm-2 control-label" style="width: 100px">出生日期:</label>
+            <div class="col-sm-3">
+                <input type="date" class="form-control" name="dataofbirth">
+            </div>
+
+
         </div>
         <div class="form-group">
             <label class="col-md-2 control-label ">顾问:</label>
@@ -88,15 +101,21 @@
                     ><?php echo (session('admin_username')); ?>
                     </div><?php endif; ?>
             </div>
-            <div class="form-group">
-                <label class="col-md-1 control-label " style="width: 100px">固定电话:</label>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="fixedline">
-                </div>
-                <label class="col-sm-1 control-label " style="width: 100px">手机/QQ:</label>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="telephone" style="width: 200px">
-                </div>
+
+            <label class="col-md-2 control-label ">固定电话:</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="fixedline">
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label ">QQ:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" name="qq">
+            </div>
+            <label class="col-sm-2 control-label ">手机:</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="telephone">
             </div>
         </div>
         <div class="form-group" align="center">
@@ -182,13 +201,13 @@
                         <option value="2">联系不上</option>
                         <option value="3">联系上</option>
                         <option value="4">约来访</option>
-                        <option value="5">已来访</option>                       
-					   <option value="6">待签约</option>
-					   <?php if(($_SESSION['admin_type']) < "2"): ?><option value="7">签约</option>
-                        <option value="8">缴费（押金）</option>
-                        <option value="9">缴费（首款）</option>
-                        <option value="10">缴费（全款）</option>
-                        
+                        <option value="5">已来访</option>
+                        <option value="6">待签约</option>
+                        <?php if(($_SESSION['admin_type']) < "2"): ?><option value="7">签约</option>
+                            <option value="8">缴费（押金）</option>
+                            <option value="9">缴费（首款）</option>
+                            <option value="10">缴费（全款）</option>
+
                             <option value="11">通过</option>
                             <option value="12">退款</option>
                             <option value="13">归档</option><?php endif; ?>
@@ -302,11 +321,13 @@
             <div class="col-sm-3">
                 <input type="file" id="accessory" name="accessory" size="30">
             </div>
-            <div class="col-sm-1">
-                <div class="btn btn-default" id="upfile" size="30">上传</div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+                <div class="btn btn-default" id="upfile" size="30">上传文件</div>
             </div>
             <div class="col-sm-1">
-                <div class="btn btn-default" id="detelefile" size="30">删除</div>
+                <div class="btn btn-default" id="detelefile" size="30">删除文件</div>
             </div>
         </div>
 

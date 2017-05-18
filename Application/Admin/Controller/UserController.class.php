@@ -64,7 +64,7 @@ class UserController extends Controller
                     $condition['state'] = array('lt', 7);
                     break;
                 case 2:
-                    $condition['state'] = array('eq', 7);
+                    $condition['state'] = array('eq', 0);
                     break;
                 case 3:
                     $condition['state'] = array('gt', 7);
@@ -247,11 +247,12 @@ class UserController extends Controller
     {
         $student = M('Student');
         if ($student->create()) {
-            $student->updatetime = time();
+//            $student->updatetime = time();
             if ($insertid = $student->save()) {
                 $this->success('更新成功,受影响的行数为' . $insertid, U(read));
             } else {
-                $this->error('上传文件成功！', U(read));
+                $this->error('跟新失败', U(read));
+//                print_r($student);
             }
         } else {
             // 如果创建失败 表示验证没有通过 输出错误提示信息

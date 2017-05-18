@@ -4,28 +4,27 @@
 
     <form class="form-horizontal" role="form" action="__URL__/insertstudent" enctype="multipart/form-data"
           method="post">
-        <!--<input type="hidden" id="sid" name="sid" value="{$sid}">-->
         <div class="form-group" align="center">
             <label class="col-sm-2 control-label ">学生名字:</label>
             <div class="col-sm-2">
                 <input type="text" class="form-control" name="name" id="name"
                        placeholder="请输入名字">
             </div>
-            <div class="form-group">
-                <label class="col-sm-1 control-label ">性别:</label>
-                <div class="col-sm-2">
-                    <select name="gender" class="form-control">
-                        <option selected>男</option>
-                        <option>女</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label" style="width: 100px">出生日期:</label>
-                    <div class="col-sm-3">
-                        <input type="date" class="form-control" name="dataofbirth">
-                    </div>
-                </div>
+
+            <label class="col-sm-1 control-label ">性别:</label>
+            <div class="col-sm-2">
+                <select name="gender" class="form-control">
+                    <option selected>男</option>
+                    <option>女</option>
+                </select>
             </div>
+
+            <label class="col-sm-2 control-label" style="width: 100px">出生日期:</label>
+            <div class="col-sm-3">
+                <input type="date" class="form-control" name="dataofbirth">
+            </div>
+
+
         </div>
         <div class="form-group">
             <label class="col-md-2 control-label ">顾问:</label>
@@ -45,15 +44,21 @@
                     </div>
                 </eq>
             </div>
-            <div class="form-group">
-                <label class="col-md-1 control-label " style="width: 100px">固定电话:</label>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="fixedline">
-                </div>
-                <label class="col-sm-1 control-label " style="width: 100px">手机/QQ:</label>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="telephone" style="width: 200px">
-                </div>
+
+            <label class="col-md-2 control-label ">固定电话:</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="fixedline">
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label ">QQ:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" name="qq">
+            </div>
+            <label class="col-sm-2 control-label ">手机:</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="telephone">
             </div>
         </div>
         <div class="form-group" align="center">
@@ -136,19 +141,18 @@
             <div class="form-group">
                 <label class="col-md-2 control-label ">学生状态:</label>
                 <div class="col-md-3">
-                    <select type="text" class="form-control" name="grade">
+                    <select type="text" class="form-control" name="state">
                         <option value="1">无</option>
                         <option value="2">联系不上</option>
                         <option value="3">联系上</option>
                         <option value="4">约来访</option>
-                        <option value="5">已来访</option>                       
-					   <option value="6">待签约</option>
-					   <lt name="Think.session.admin_type" value="2">
-                        <option value="7">签约</option>
-                        <option value="8">缴费（押金）</option>
-                        <option value="9">缴费（首款）</option>
-                        <option value="10">缴费（全款）</option>
-                        
+                        <option value="5">已来访</option>
+                        <option value="6">待签约</option>
+                        <lt name="Think.session.admin_type" value="2">
+                            <option value="7">签约</option>
+                            <option value="8">缴费（押金）</option>
+                            <option value="9">缴费（首款）</option>
+                            <option value="10">缴费（全款）</option>
                             <option value="11">通过</option>
                             <option value="12">退款</option>
                             <option value="13">归档</option>
@@ -266,11 +270,13 @@
             <div class="col-sm-3">
                 <input type="file" id="accessory" name="accessory" size="30">
             </div>
-            <div class="col-sm-1">
-                <div class="btn btn-default" id="upfile" size="30">上传</div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+                <div class="btn btn-default" id="upfile" size="30">上传文件</div>
             </div>
             <div class="col-sm-1">
-                <div class="btn btn-default" id="detelefile" size="30">删除</div>
+                <div class="btn btn-default" id="detelefile" size="30">删除文件</div>
             </div>
         </div>
 

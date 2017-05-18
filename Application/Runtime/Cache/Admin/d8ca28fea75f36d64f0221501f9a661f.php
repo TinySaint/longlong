@@ -35,15 +35,28 @@
 </div>
 <div class="container">
     <div class="col-md-2 left" style="height: 100%">
-        <?php if($_SESSION['admin_type']< 2 ): ?><ul class="list-group">
-                <?php if(($_SESSION['admin_type']) == "0"): ?><li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">用户管理</a></li><?php endif; ?>
+        <?php if($_SESSION['admin_type']== 0 ): ?><ul class="list-group">
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">用户管理</a></li>
                 <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/adduser">添加用户</a></li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">学生管理</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">添加学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">待审核学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">审核通过学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">无效学生</a></li>
             </ul><?php endif; ?>
 
-        <ul class="list-group">
-            <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">学生管理</a></li>
-            <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">添加学生</a></li>
-        </ul>
+        <?php if($_SESSION['admin_type']== 1 ): ?><ul class="list-group">
+            <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">审核通过学生</a></li>
+            </ul><?php endif; ?>
+
+        <?php if($_SESSION['admin_type']== 2 ): ?><ul class="list-group">
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">学生管理</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">添加学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">审核通过学生</a></li>
+            </ul><?php endif; ?>
+
     </div>
     <div style="height: 100%"></div>
     <div class="col-md-10 right">

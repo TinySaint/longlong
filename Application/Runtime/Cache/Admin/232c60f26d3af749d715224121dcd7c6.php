@@ -35,15 +35,28 @@
 </div>
 <div class="container">
     <div class="col-md-2 left" style="height: 100%">
-        <?php if($_SESSION['admin_type']< 2 ): ?><ul class="list-group">
-                <?php if(($_SESSION['admin_type']) == "0"): ?><li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">用户管理</a></li><?php endif; ?>
+        <?php if($_SESSION['admin_type']== 0 ): ?><ul class="list-group">
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">用户管理</a></li>
                 <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/adduser">添加用户</a></li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">学生管理</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">添加学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">待审核学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">审核通过学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">无效学生</a></li>
             </ul><?php endif; ?>
 
-        <ul class="list-group">
-            <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">学生管理</a></li>
-            <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">添加学生</a></li>
-        </ul>
+        <?php if($_SESSION['admin_type']== 1 ): ?><ul class="list-group">
+            <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">审核通过学生</a></li>
+            </ul><?php endif; ?>
+
+        <?php if($_SESSION['admin_type']== 2 ): ?><ul class="list-group">
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/read">学生管理</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/User/add">添加学生</a></li>
+                <li class="list-group-item"><a href="/thinkstudy/index.php/Admin/Index/index">审核通过学生</a></li>
+            </ul><?php endif; ?>
+
     </div>
     <div style="height: 100%"></div>
     <div class="col-md-10 right">
@@ -264,7 +277,7 @@
             <div class="form-group">
                 <label class="col-md-2 control-label ">GMAT:</label>
                 <div class="col-sm-3">
-                    <div type="text" class="form-control" name="gmat"><?php echo ($student['teltsdate']); ?></div>
+                    <div type="text" class="form-control" name="gmat"><?php echo ($student['gmat']); ?></div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-2 control-label " style="width: 100px">考试时间:</label>
@@ -295,12 +308,13 @@
                 <div class="form-group">
                     <label class="col-md-2 control-label " style="width: 100px">考试时间:</label>
                     <div class="col-md-3">
-                        <div type="date" class="form-control" name="lsatdata"><?php echo ($student['lsatdata']); ?></div>
+                        <div type="date" class="form-control" name="lsatdata"><?php echo ($student['lsatdate']); ?></div>
                     </div>
                     <p>(如未考，请选择考试时间！)</p>
                 </div>
             </div>
         </div>
+        <!--
         <?php switch($_SESSION['admin_type']): case "0": if($student['state'] <= 6): ?><div class="form-group">
                         <div class="col-md-offset-5 col-md-12">
                             <a class="btn btn-default"
@@ -324,7 +338,7 @@
                         </div>
                     </div><?php endif; break;?>
             <?php default: endswitch;?>
-
+        -->
 
     </form>
 
