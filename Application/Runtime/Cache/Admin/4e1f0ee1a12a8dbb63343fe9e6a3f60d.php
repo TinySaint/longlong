@@ -64,7 +64,6 @@
 
     <form class="form-horizontal" role="form" action="/thinkstudy/index.php/Admin/User/insertstudent" enctype="multipart/form-data"
           method="post">
-        <!--<input type="hidden" id="sid" name="sid" value="<?php echo ($sid); ?>">-->
         <div class="form-group" align="center">
             <label class="col-sm-2 control-label ">学生名字:</label>
             <div class="col-sm-2">
@@ -151,8 +150,7 @@
         <div class="form-group">
             <label class="col-md-2 control-label ">专业:</label>
             <div class="col-sm-5">
-                <input type="text" class="form-control" name="major"
-                       placeholder="请输入名字">
+                <input type="text" class="form-control" name="major">
             </div>
             <div class="form-group">
                 <label class="col-md-1 control-label ">Email:</label>
@@ -196,7 +194,7 @@
             <div class="form-group">
                 <label class="col-md-2 control-label ">学生状态:</label>
                 <div class="col-md-3">
-                    <select type="text" class="form-control" name="grade">
+                    <select type="text" class="form-control" name="state">
                         <option value="1">无</option>
                         <option value="2">联系不上</option>
                         <option value="3">联系上</option>
@@ -207,7 +205,6 @@
                             <option value="8">缴费（押金）</option>
                             <option value="9">缴费（首款）</option>
                             <option value="10">缴费（全款）</option>
-
                             <option value="11">通过</option>
                             <option value="12">退款</option>
                             <option value="13">归档</option><?php endif; ?>

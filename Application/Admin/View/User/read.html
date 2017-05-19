@@ -109,7 +109,7 @@
                     </thead>
                     <volist name="studentinfo" id="vo">
                         <tr>
-                            <td><a href="{:U('Admin/User/detailinfo',array('sid'=>$vo['sid']))}">详细信息</a></td>
+                            <td><a href="{:U('Admin/User/editstudent',array('sid'=>$vo['sid']))}">修改信息</a></td>
                             <td>{$vo['infotype']}</td>
                             <td>{$vo['addtime']|date="Y-m-d H:i:s",###}</td>
                             <td>{$vo['name']}</td>

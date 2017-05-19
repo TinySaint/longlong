@@ -18,7 +18,12 @@ class UserController extends Controller
 //            $this->redirect('Login/index', array(), 3, '..请先登陆..');
 //        }
 //    }
-    //添加学生信息页面
+
+    /**
+     * Function name:add
+     * Function description:
+     * 添加学生信息页面
+     */
     public function add()
     {
         $student = M('Student');
@@ -29,8 +34,11 @@ class UserController extends Controller
         //$this->assign('sid', $maxsid + 1);
         $this->display();
     }
-
-    //显示学生的列表，包括搜索
+    /**
+     * Function name:read
+     * Function description:
+     * 显示学生的列表，包括搜索
+     */
     public function read()
     {
         $student = M('Student');
@@ -87,7 +95,12 @@ class UserController extends Controller
         $this->display();
     }
 
-    //添加学生信息 包括上传文件
+
+    /**
+     * Function name:insertstudent
+     * Function description:
+     * 添加学生信息 包括上传文件
+     */
     public function insertstudent()
     {
         $student = D('Student');
@@ -106,6 +119,25 @@ class UserController extends Controller
         }
     }
 
+    /**
+     * Function name:editstudent
+     * Function description:
+     * edit student
+     */
+    public function editstudent(){
+        $file = M('File');
+        $student = D('Student');
+        $user = M('User');
+        $sid = (int)$_GET['sid'];
+        $filelist = $file->where("sid=$sid")->select();
+        $list = $student->where("sid=$sid")->find();
+        $userlist = $user->select();
+        $this->assign('student', $list);
+        $this->assign('editfilelist', $filelist);
+        $this->assign('userlist', $userlist);
+        $this->assign('title', '显示用户编辑信息');
+        $this->display();
+    }
 
 //删除学生信息
     public function deleteinfo()

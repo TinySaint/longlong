@@ -167,7 +167,7 @@
                     </tr>
                     </thead>
                     <?php if(is_array($studentinfo)): $i = 0; $__LIST__ = $studentinfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                            <td><a href="<?php echo U('Admin/User/detailinfo',array('sid'=>$vo['sid']));?>">详细信息</a></td>
+                            <td><a href="<?php echo U('Admin/User/editstudent',array('sid'=>$vo['sid']));?>">修改信息</a></td>
                             <td><?php echo ($vo['infotype']); ?></td>
                             <td><?php echo (date("Y-m-d H:i:s",$vo['addtime'])); ?></td>
                             <td><?php echo ($vo['name']); ?></td>
