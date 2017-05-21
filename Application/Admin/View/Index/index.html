@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="">后台</a>
+            <a class="navbar-brand" href="">伊美思留学信息系统</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -43,15 +43,15 @@
             <ul class="list-group">
                 <li class="list-group-item"><a href="__APP__/Admin/Read/adminread">学生管理</a></li>
                 <li class="list-group-item"><a href="__APP__/Admin/User/add">添加学生</a></li>
-                <li class="list-group-item"><a href="__APP__/Admin/Read/checkpendingread">待审核学生</a></li>
-                <li class="list-group-item"><a href="__APP__/Admin/Read/checkread">审核通过学生</a></li>
+                <li class="list-group-item"><a href="__APP__/Admin/Read/checkpendingread">待审学生</a></li>
+                <li class="list-group-item"><a href="__APP__/Admin/Read/checkread">签约学生</a></li>
                 <li class="list-group-item"><a href="__APP__/Admin/Read/insignificanceread">无效学生</a></li>
             </ul>
         </if>
 
         <if condition="$Think.session.admin_type eq 1 ">
             <ul class="list-group">
-            <li class="list-group-item"><a href="__APP__/Admin/Read/fileteacherread">审核通过学生</a></li>
+            <li class="list-group-item"><a href="__APP__/Admin/Read/fileteacherread">签约学生</a></li>
             </ul>
         </if>
 
@@ -59,7 +59,7 @@
             <ul class="list-group">
                 <li class="list-group-item"><a href="__APP__/Admin/Read/introduceread">学生管理</a></li>
                 <li class="list-group-item"><a href="__APP__/Admin/User/add">添加学生</a></li>
-                <li class="list-group-item"><a href="__APP__/Admin/Read/introducecheckread">审核通过学生</a></li>
+                <li class="list-group-item"><a href="__APP__/Admin/Read/introducecheckread">签约学生</a></li>
             </ul>
         </if>
 
@@ -69,24 +69,24 @@
         <block name="right">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">面板标题</h3>
+
                 </div>
             </div>
             <div class="table-responsive">
             <table class="table">
                 <th class="col-md-2">姓名</th>
                 <th class="col-md-1">性别</th>
-                <th class="col-md-1">用户类别</th>
+                <th class="col-md-1">类别</th>
                 <th class="col-md-2">电话</th>
                 <th class="col-md-1">日期</th>
-                <th class="col-md-1">修改信息</th>
+                <th class="col-md-1">修改</th>
                 <th class="col-md-1">删除</th>
                 <volist name="userinfo" id="vo">
                     <tr>
                         <td>{$vo['username']}</td>
                         <td>{$vo['usergender']}</td>
                         <td><switch name="vo.usertype">
-                            <case value="0"><p  style="color: red">超级管理员</p></case>
+                            <case value="0"><p  style="color: red">经理</p></case>
                             <case value="1"><p  style="color: green">文案老师</p></case>
                             <case value="2"><p  style="color: blue">顾问</p></case>
                             <default/>
