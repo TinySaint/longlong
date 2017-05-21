@@ -25,6 +25,7 @@ class CommentController extends  Controller
             'pid'=>I('post.pid'),
             'author'=>I('post.author'),
             'sid'=>I('post.sid'),
+            'inputstate'=>I('post.inputstate')
         );
 //            print_r($_POST);
         $sid=I('post.sid');

@@ -1,0 +1,216 @@
+<extend name="Index:index"/>
+
+
+<block name="right">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">学生列表</h3>
+        </div>
+        <script>
+            function searchinfo() {
+                var str = "";
+                var name = document.getElementById("name");
+                var studyabroad = document.getElementById("studyabroad");
+                var state = document.getElementById("state");
+                var addtime = document.getElementById("addtime");
+                var lastcomment = document.getElementById("lastcomment");
+                var addtime2 = document.getElementById("addtime2");
+                var lastcomment2 = document.getElementById("lastcomment2");
+                var telephone = document.getElementById("telephone");
+                var major = document.getElementById("major");
+                var infotype = document.getElementById("infotype");
+
+                if (!name.value == "") {
+                    str = str + "/name/" + name.value;
+                }
+                if (!studyabroad.value == "") {
+                    str = str + "/studyabroad/" + studyabroad.value;
+                }
+                if (!state.value == "") {
+                    str = str + "/state/" + state.value;
+                }
+                if (!addtime.value == "") {
+                    str = str + "/addtime/" + addtime.value;
+                }
+                if (!lastcomment.value == "") {
+                    str = str + "/lastcomment/" + lastcomment.value;
+                }
+                if (!addtime2.value == "") {
+                    str = str + "/addtime2/" + addtime2.value;
+                }
+                if (!lastcomment2.value == "") {
+                    str = str + "/lastcomment2/" + lastcomment2.value;
+                }
+                if (!telephone.value == "") {
+                    str = str + "/telephone/" + telephone.value;
+                }
+                if (!major.value == "") {
+                    str = str + "/major/" + major.value;
+                }
+                if (!infotype.value == "") {
+                    str = str + "/infotype/" + infotype.value;
+                }
+
+                window.location.href = "__URL__/introduceread" + str;
+            }
+        </script>
+
+        <div class="panel-body">
+            <!--{$studentinfo|print_r}-->
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">姓名:</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" placeholder="请输入名字" id="name"
+                               value="{$get.name}">
+                    </div>
+                    <label class="col-sm-1 control-label" style="width: 100px">录入时间:</label>
+                    <div class="col-sm-2" >
+                        <input type="date" class="form-control" id="addtime" value="{$get.addtime}" style="width: 150px">
+                    </div>
+                    <label class="col-sm-1 control-label" style="width: 10px">—— </label>
+                    <div class="col-sm-2" style="width: 200px">
+                        <input type="date" class="form-control" id="addtime2"
+                               value="{$get.addtime2}">
+                    </div>
+
+
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">状态:</label>
+                    <div class="col-sm-2">
+                        <select type="text" class="form-control" id="state">
+                            <option value="">所有</option>
+                            <option value="1" <eq name="get.state" value="1">selected='selected'</eq>>无</option>
+                            <option value="2" <eq name="get.state" value="2">selected='selected'</eq>>一星</option>
+                            <option value="3" <eq name="get.state" value="3">selected='selected'</eq>>二星</option>
+                            <option value="4" <eq name="get.state" value="4">selected='selected'</eq>>三星</option>
+                            <option value="5" <eq name="get.state" value="5">selected='selected'</eq>>四星</option>
+                            <option value="6" <eq name="get.state" value="6">selected='selected'</eq>>五星</option>
+                            <option value="7" <eq name="get.state" value="7">selected='selected'</eq>>联系不上</option>
+                            <option value="8" <eq name="get.state" value="8">selected='selected'</eq>>联系上</option>
+                            <option value="9" <eq name="get.state" value="9">selected='selected'</eq>>约来访</option>
+                            <option value="10" <eq name="get.state" value="10">selected='selected'</eq>>已来访</option>
+                            <option value="11" <eq name="get.state" value="11">selected='selected'</eq>>待签约</option>
+                            <option value="12" <eq name="get.state" value="12">selected='selected'</eq>>签约</option>
+                            <option value="13" <eq name="get.state" value="13">selected='selected'</eq>>缴费（押金）</option>
+                            <option value="14" <eq name="get.state" value="14">selected='selected'</eq>>缴费（首款）</option>
+                            <option value="15" <eq name="get.state" value="15">selected='selected'</eq>>缴费（全款）</option>
+                            <option value="16" <eq name="get.state" value="16">selected='selected'</eq>>通过</option>
+                            <option value="17" <eq name="get.state" value="17">selected='selected'</eq>>退款</option>
+                        </select>
+                    </div>
+                    <label class="col-sm-1 control-label" style="width: 100px">跟进时间:</label>
+                    <div class="col-sm-2" >
+                        <input type="date" class="form-control" id="lastcomment" value="{$get.lastcomment}" style="width: 150px">
+                    </div>
+                    <label class="col-sm-1 control-label" style="width: 10px">—— </label>
+                    <div class="col-sm-2" style="width: 200px">
+                        <input type="date" class="form-control" id="lastcomment2"
+                               value="{$get.lastcomment2}">
+                    </div>
+
+                </div>
+                <div class="form-group">
+
+                    <label class="col-sm-2 control-label" style="width: 100px">留学国家:</label>
+                    <div class="col-sm-3" style="width: 200px">
+                        <input type="text" class="form-control" placeholder="请输入国家" id="studyabroad"
+                               value="{$get.studyabroad}">
+                    </div>
+                    <label class="col-sm-2 control-label" style="width: 100px">资源编号:</label>
+                    <div class="col-sm-3" style="width: 200px">
+                        <input type="text" class="form-control" placeholder="请输入国家" id="infotype"
+                               value="{$get.infotype}">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" style="width: 100px">电话:</label>
+                    <div class="col-sm-3" style="width: 200px">
+                        <input type="text" class="form-control" placeholder="请输入电话" id="telephone"
+                               value="{$get.telephone}">
+                    </div>
+
+                    <label class="col-sm-2 control-label" style="width: 100px">专业:</label>
+                    <div class="col-sm-3" style="width: 200px">
+                        <input type="text" class="form-control" placeholder="请输入专业" id="major"
+                               value="{$get.major}">
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-2">
+                        <button class="btn btn-info btn-search" onclick="searchinfo()">搜索</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-1" style="min-width: 100px">修改信息</th>
+                        <th class="col-md-1" style="min-width: 100px">资源编号</th>
+                        <th class="col-md-1" style="min-width: 100px">录入时间</th>
+                        <th class="col-md-1" style="min-width: 100px">姓名</th>
+                        <th class="col-md-1" style="min-width: 100px">性别</th>
+                        <th class="col-md-1" style="min-width: 150px">电话</th>
+                        <th class="col-md-1" style="min-width: 50px">顾问</th>
+                        <th class="col-md-3" style="min-width: 100px">留学国家</th>
+                        <th class="col-md-1" style="min-width: 100px">留学时间</th>
+                        <th class="col-md-1" style="min-width: 100px">跟进时间</th>
+                        <th class="col-md-1" style="min-width: 100px">当前状态</th>
+
+                        <th class="col-md-1" style="min-width: 100px">删除</th>
+                    </tr>
+                    </thead>
+                    <volist name="studentinfo" id="vo">
+                        <tr>
+                            <td><a href="{:U('Admin/User/editstudent',array('sid'=>$vo['sid']))}">修改信息</a></td>
+                            <td>{$vo['infotype']}</td>
+                            <td>{$vo['addtime']|date="Y-m-d H:i:s",###}</td>
+                            <td>{$vo['name']}</td>
+                            <td>{$vo['gender']}</td>
+                            <td>{$vo['telephone']}</td>
+                            <td>{$_SESSION['admin_username']}</td>
+                            <td>{$vo['studyabroad']}</td>
+                            <td>{$vo['abroaddate']}</td>
+                            <td>{$vo['lastcomment']|date="Y-m-d H:i:s",###}</td>
+                            <td>
+                                <switch name="vo.state">
+                                    <case value="1"><p style="color: dodgerblue">无</p></case>
+                                    <case value="2"><p style="color: dodgerblue">一星</p></case>
+                                    <case value="3"><p style="color: dodgerblue">二星</p></case>
+                                    <case value="4"><p style="color: dodgerblue">三星</p></case>
+                                    <case value="5"><p style="color: dodgerblue">四星</p></case>
+                                    <case value="6"><p style="color: dodgerblue">五星</p></case>
+                                    <case value="7"><p style="color: dodgerblue">联系不上</p></case>
+                                    <case value="8"><p style="color: dodgerblue">联系上</p></case>
+                                    <case value="9"><p style="color: dodgerblue">约来访</p></case>
+                                    <case value="10"><p style="color: dodgerblue">已来访</p></case>
+                                    <case value="11"><p style="color: dodgerblue">待签约</p></case>
+                                    <case value="12"><p style="color: seagreen">签约</p></case>
+                                    <case value="13"><p style="color: seagreen">缴费（押金）</p></case>
+                                    <case value="14"><p style="color: seagreen">缴费（首款）</p></case>
+                                    <case value="15"><p style="color: seagreen">缴费（全款）</p></case>
+                                    <case value="16"><p style="color: seagreen">通过</p></case>
+                                    <case value="17"><p style="color: seagreen">退款</p></case>
+                                    <default/>
+                                </switch>
+                            </td>
+
+                            <eq name="Think.session.admin_type" value="0">
+                                <td>
+                                    <a href="javascript:if(confirm('确定要删除吗?')) location='{:U('Admin/User/deleteinfo',array('sid'=>$vo['sid']))}'">删除</a>
+                                </td>
+                            </eq>
+                            <!-- <td><a href="__URL__/updateinfo">修改</a></td>
+                             <td><a href="__URL__/deteleinfo/">删除</a></td> -->
+                        </tr>
+                    </volist>
+                </table>
+            </div>
+            <div class="panel-footer">
+                <div class="result page">{$page}</div>
+            </div>
+        </div>
+    </div>
+</block>

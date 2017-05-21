@@ -26,14 +26,14 @@ class UserController extends Controller
      */
     public function add()
     {
-        $student = M('Student');
-        //$maxsid = $student->max('sid');
         $user = M('User');
-        $list = $user->select();
+        $list = $user->where("usertype=2")->select();
+        $filelist = $user->where("usertype=1")->select();
         $this->assign('userlist', $list);
-        //$this->assign('sid', $maxsid + 1);
+        $this->assign('filelist', $filelist);
         $this->display();
     }
+
     /**
      * Function name:read
      * Function description:
@@ -42,7 +42,6 @@ class UserController extends Controller
     public function read()
     {
         $student = M('Student');
-        $comment = M('Comment');
         // 构造查询条件
         $condition = array();
         $sessiontype = $_SESSION['admin_type'];
@@ -83,6 +82,7 @@ class UserController extends Controller
 
         $count = $student->where($condition)->count();
         $Page = new \Think\Page($count, 10);
+        $Page->setConfig('header', '个会员');
 //        echo $student->_sql();
         $show = $Page->show();// 分页显示输出
         $studentinfo = $student->where($condition)->order('sid')->limit($Page->firstRow . ',' . $Page->listRows)->select();
@@ -112,7 +112,11 @@ class UserController extends Controller
             $student->lastcomment = time();
             // 上传文件
             if ($student->add()) {
-                $this->redirect('User/read', array(), 0, '..添加成功..');
+                if ($_SESSION['admin_type']==0){
+                    $this->redirect('Read/adminread', array(), 0, '..添加成功..');
+                }else{
+                    $this->redirect('Read/introduceread', array(), 0, '..添加成功..');
+                }
             } else {
                 $this->error($student->getError());
             }
@@ -124,21 +128,60 @@ class UserController extends Controller
      * Function description:
      * edit student
      */
-    public function editstudent(){
-        $file = M('File');
+    public function editstudent()
+    {
+
         $student = D('Student');
         $user = M('User');
         $sid = (int)$_GET['sid'];
+        $file = M('File');
+
         $filelist = $file->where("sid=$sid")->select();
         $list = $student->where("sid=$sid")->find();
-        $userlist = $user->select();
+        $fileteacherlist = $user->where('usertype=1')->select();
+        $introducelist=$user->where('usertype=2')->select();
+        $introduceid = $list['introduceid'];
+        $list['introducename'] = M('User')->where("uid=$introduceid")->getField('username');
+        //评论列表
+        $inputstate = array();
+        $comment = $this->CommentList($sid, $pid = 0, $commentList = array(), $spac = 0, $pauthor = NULL, $inputstate);
+//       print_r($comment);
+
+        $this->assign('commentList', array_reverse($comment));
         $this->assign('student', $list);
         $this->assign('editfilelist', $filelist);
-        $this->assign('userlist', $userlist);
+        $this->assign('fileteacherlist', $fileteacherlist);
+        $this->assign('introducelist', $introducelist);
         $this->assign('title', '显示用户编辑信息');
         $this->display();
     }
 
+    public function checkstudent()
+    {
+        $student = D('Student');
+        $user = M('User');
+        $sid = (int)$_GET['sid'];
+        $file = M('File');
+
+        $filelist = $file->where("sid=$sid")->select();
+        $list = $student->where("sid=$sid")->find();
+        $fileteacherlist = $user->where('usertype=1')->select();
+        $introducelist=$user->where('usertype=2')->select();
+        $introduceid = $list['introduceid'];
+        $list['introducename'] = M('User')->where("uid=$introduceid")->getField('username');
+        //评论列表
+        $inputstate = array();
+        $comment = $this->CommentList($sid, $pid = 0, $commentList = array(), $spac = 0, $pauthor = NULL, $inputstate);
+//       print_r($comment);
+
+        $this->assign('commentList', array_reverse($comment));
+        $this->assign('student', $list);
+        $this->assign('editfilelist', $filelist);
+        $this->assign('fileteacherlist', $fileteacherlist);
+        $this->assign('introducelist', $introducelist);
+        $this->assign('title', '显示用户编辑信息');
+        $this->display();
+    }
 //删除学生信息
     public function deleteinfo()
     {
@@ -157,7 +200,7 @@ class UserController extends Controller
                 }
             }
             $commrnt->where(array('sid' => $data['sid']))->delete();
-            $this->redirect('User/read', array(), 0, '..删除成功..');
+            $this->redirect('Read/adminread', array(), 0, '..删除成功..');
         }
     }
 
@@ -279,11 +322,11 @@ class UserController extends Controller
     {
         $student = M('Student');
         if ($student->create()) {
-//            $student->updatetime = time();
+            $student->updatetime = time();
             if ($insertid = $student->save()) {
-                $this->success('更新成功,受影响的行数为' . $insertid, U(read));
+                $this->success('更新成功,受影响的行数为');
             } else {
-                $this->error('跟新失败', U(read));
+                $this->error('跟新失败');
 //                print_r($student);
             }
         } else {
@@ -301,8 +344,14 @@ class UserController extends Controller
 
         $filelist = $file->where("sid=$sid")->select();
         $list = $student->where("sid=$sid")->find();
+        $filetracherid = $list['fileteacherid'];
+        $introduceid = $list['introduceid'];
+        $list['fileteacher'] = M('User')->where("uid=$filetracherid")->getField('username');
+        $list['introducename'] = M('User')->where("uid=$introduceid")->getField('username');
+
         //评论列表
-        $comment = $this->CommentList($sid, $pid = 0, $commentList = array(), $spac = 0, $pauthor = NULL);
+        $inputstate = array('eq', 4);
+        $comment = $this->CommentList($sid, $pid = 0, $commentList = array(), $spac = 0, $pauthor = NULL, $inputstate);
 //       print_r($comment);
         $this->assign('filelistinfo', $filelist);
         $this->assign('commentList', array_reverse($comment));
@@ -312,19 +361,7 @@ class UserController extends Controller
     }
 
 //审核是或否通过
-    public function checkinfo()
-    {
-        $student = M('Student');
-        $sid = (int)$_GET['sid'];
-        $state = (int)$_GET['state'];
-        $date['state'] = $state;
-        $date['fileteacher'] = $_SESSION['admin_username'];
-        if ($insertid = $student->where("sid=$sid")->field('state', 'fileteacher')->save($date)) {
-            $this->success('签约成功!' . $insertid, U(detailinfo, array('sid' => $sid)));
-        } else {
-            $this->error('签约失败!请联管理员', U(read));
-        }
-    }
+
 
 //文件下载
     public function downloadfile()
@@ -369,13 +406,17 @@ class UserController extends Controller
     }
 
 //评论列表
-    function CommentList($sid = 0, $pid = 0, &$commentList = array(), $spac = 0, $pauthor = NULL)
+    function CommentList($sid = 0, $pid = 0, &$commentList = array(), $spac = 0, $pauthor = NULL, $inputstate)
     {
         static $i = 0;
         $spac = $spac + 1;//初始为1级评论
         $pauthor = $pauthor;
+        $conditions = array('think_comment.pid' => $pid, 'think_comment.sid' => $sid);
+        if (!empty($inputstate)) {
+            $conditions['think_comment.inputstate'] = $inputstate;
+        }
         $List = M('Comment')->
-        field('think_comment.sid,think_comment.id,think_comment.add_time,think_comment.author,think_comment.content,pid,think_comment.id,think_comment.pid')->where(array('think_comment.pid' => $pid, 'think_comment.sid' => $sid))->select();
+        field('think_comment.sid,think_comment.id,think_comment.add_time,think_comment.author,think_comment.content,pid,think_comment.id,think_comment.pid')->where($conditions)->select();
         foreach ($List as $k => $v) {
             $commentList[$i]['level'] = $spac;//评论层级
             $commentList[$i]['sid'] = $v['sid'];

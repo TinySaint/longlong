@@ -4,6 +4,7 @@
 
     <form class="form-horizontal" role="form" action="__URL__/insertstudent" enctype="multipart/form-data"
           method="post">
+        <input type="hidden" name="checkinfo" value="1">
         <div class="form-group" align="center">
             <label class="col-sm-2 control-label ">学生名字:</label>
             <div class="col-sm-2">
@@ -32,13 +33,14 @@
                 <!--<input type="text" class="form-control" name="introducename"-->
                 <!--placeholder="请输入名字">-->
                 <eq name="Think.session.admin_type" value="0">
-                    <select name="introducename" class="form-control">
+                    <select name="introduceid" class="form-control">
+                        <option value="0">无</option>
                         <volist name="userlist" id="vo">
-                            <option>{$vo['username']}</option>
+                            <option value="{$vo['uid']}">{$vo['username']}</option>
                         </volist>
                     </select>
                     <else/>
-                    <input type="hidden" name="introducename" value="{$Think.session.admin_username}"/>
+                    <input type="hidden" name="introduceid" value="{$Think.session.admin_uid}"/>
                     <div type="text" class="form-control"
                     >{$Think.session.admin_username}
                     </div>
@@ -130,10 +132,10 @@
         <div class="form-group">
             <label class="col-md-2 control-label ">文案老师:</label>
             <div class="col-sm-3">
-                <select name="fileteacher" class="form-control">
-                    <option>无</option>
-                    <volist name="userlist" id="vo">
-                        <option>{$vo['username']}</option>
+                <select name="fileteacherid" class="form-control">
+                    <option value="0">无</option>
+                    <volist name="filelist" id="vo">
+                        <option value="{$vo['uid']}">{$vo['username']}</option>
                     </volist>
                 </select>
             </div>
@@ -142,20 +144,22 @@
                 <div class="col-md-3">
                     <select type="text" class="form-control" name="state">
                         <option value="1">无</option>
-                        <option value="2">联系不上</option>
-                        <option value="3">联系上</option>
-                        <option value="4">约来访</option>
-                        <option value="5">已来访</option>
-                        <option value="6">待签约</option>
-                        <lt name="Think.session.admin_type" value="2">
-                            <option value="7">签约</option>
-                            <option value="8">缴费（押金）</option>
-                            <option value="9">缴费（首款）</option>
-                            <option value="10">缴费（全款）</option>
-                            <option value="11">通过</option>
-                            <option value="12">退款</option>
-                            <option value="13">归档</option>
-                        </lt>
+                        <option value="2">一星</option>
+                        <option value="3">二星</option>
+                        <option value="4">三星</option>
+                        <option value="5">四星</option>
+                        <option value="6">五星</option>
+                        <option value="7">联系不上</option>
+                        <option value="8">联系上</option>
+                        <option value="9">约来访</option>
+                        <option value="10">已来访</option>
+                        <option value="11">待签约</option>
+                        <option value="12">签约</option>
+                        <option value="13">缴费（押金）</option>
+                        <option value="14">缴费（首款）</option>
+                        <option value="15">缴费（全款）</option>
+                        <option value="16">通过</option>
+                        <option value="17">退款</option>
                     </select>
                 </div>
             </div>
@@ -205,7 +209,7 @@
                                 //判断返回的status来确定文件是否上传成功，以及上传成功后要做的操作
                                 alert(response.msg);
                                 $("#accessory").val("");
-                                $("#filelistdiv").append("<p id='" + response.fid + "'><input type='checkbox' name='filelist' value='" + response.fid + "'/>" + response.fname + "---" + response.fid + "</p>");
+                                $("#filelistdiv").append("<p id='" + response.fid + "'><input type='checkbox' name='filelist' value='" + response.fid + "'/>" + response.fname + "</p>");
                             }
                         },
                         error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -256,28 +260,28 @@
                 });
             });
         </script>
-        <div class="form-group" align="center">
-            <label class="col-sm-2 control-label">文件列表:</label>
-            <div class="col-sm-4">
-                <div class="form-control" id="filelistdiv" style="height: 120px;padding-left: 20px" align="left">
+        <!--<div class="form-group" align="center">-->
+            <!--<label class="col-sm-2 control-label">文件列表:</label>-->
+            <!--<div class="col-sm-4">-->
+                <!--<div class="form-control" id="filelistdiv" style="height: 120px;padding-left: 20px" align="left">-->
 
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="col-md-2 control-label ">成绩附件:</label>
-            <div class="col-sm-3">
-                <input type="file" id="accessory" name="accessory" size="30">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-2">
-                <div class="btn btn-default" id="upfile" size="30">上传文件</div>
-            </div>
-            <div class="col-sm-1">
-                <div class="btn btn-default" id="detelefile" size="30">删除文件</div>
-            </div>
-        </div>
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<label class="col-md-2 control-label ">成绩附件:</label>-->
+            <!--<div class="col-sm-3">-->
+                <!--<input type="file" id="accessory" name="accessory" size="30">-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="form-group">-->
+            <!--<div class="col-sm-offset-2 col-sm-2">-->
+                <!--<div class="btn btn-default" id="upfile" size="30">上传文件</div>-->
+            <!--</div>-->
+            <!--<div class="col-sm-1">-->
+                <!--<div class="btn btn-default" id="detelefile" size="30">删除文件</div>-->
+            <!--</div>-->
+        <!--</div>-->
 
         <!-- next -->
         <h2 align="center"> 英语成绩 </h2>
@@ -372,7 +376,6 @@
                 <p>(如未考，请选择考试时间！)</p>
             </div>
         </div>
-        <input type="hidden" name="state" value="1"/>
         <div class="form-group">
             <div class="col-md-offset-3 col-md-5">
                 <button type="submit" class="btn btn-default">提交</button>

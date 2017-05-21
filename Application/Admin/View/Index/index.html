@@ -41,25 +41,25 @@
                 <li class="list-group-item"><a href="__APP__/Admin/Index/adduser">添加用户</a></li>
             </ul>
             <ul class="list-group">
-                <li class="list-group-item"><a href="__APP__/Admin/User/read">学生管理</a></li>
+                <li class="list-group-item"><a href="__APP__/Admin/Read/adminread">学生管理</a></li>
                 <li class="list-group-item"><a href="__APP__/Admin/User/add">添加学生</a></li>
-                <li class="list-group-item"><a href="__APP__/Admin/User/read">待审核学生</a></li>
-                <li class="list-group-item"><a href="__APP__/Admin/Index/index">审核通过学生</a></li>
-                <li class="list-group-item"><a href="__APP__/Admin/User/add">无效学生</a></li>
+                <li class="list-group-item"><a href="__APP__/Admin/Read/checkpendingread">待审核学生</a></li>
+                <li class="list-group-item"><a href="__APP__/Admin/Read/checkread">审核通过学生</a></li>
+                <li class="list-group-item"><a href="__APP__/Admin/Read/insignificanceread">无效学生</a></li>
             </ul>
         </if>
 
         <if condition="$Think.session.admin_type eq 1 ">
             <ul class="list-group">
-            <li class="list-group-item"><a href="__APP__/Admin/Index/index">审核通过学生</a></li>
+            <li class="list-group-item"><a href="__APP__/Admin/Read/fileteacherread">审核通过学生</a></li>
             </ul>
         </if>
 
         <if condition="$Think.session.admin_type eq 2 ">
             <ul class="list-group">
-                <li class="list-group-item"><a href="__APP__/Admin/User/read">学生管理</a></li>
+                <li class="list-group-item"><a href="__APP__/Admin/Read/introduceread">学生管理</a></li>
                 <li class="list-group-item"><a href="__APP__/Admin/User/add">添加学生</a></li>
-                <li class="list-group-item"><a href="__APP__/Admin/Index/index">审核通过学生</a></li>
+                <li class="list-group-item"><a href="__APP__/Admin/Read/introducecheckread">审核通过学生</a></li>
             </ul>
         </if>
 
@@ -87,7 +87,7 @@
                         <td>{$vo['usergender']}</td>
                         <td><switch name="vo.usertype">
                             <case value="0"><p  style="color: red">超级管理员</p></case>
-                            <case value="1"><p  style="color: green">管理员</p></case>
+                            <case value="1"><p  style="color: green">文案老师</p></case>
                             <case value="2"><p  style="color: blue">顾问</p></case>
                             <default/>
                             default

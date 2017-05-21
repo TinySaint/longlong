@@ -1,7 +1,7 @@
 <extend name="Index:index"/>
 
 <block name="right">
-
+    <!--{$student|print_r}-->
     <form class="form-horizontal" role="form" action="" method="post">
         <div class="form-group" align="center">
             <label class="col-sm-2 control-label ">学生名字:</label>
@@ -134,9 +134,9 @@
                         <case value="11"><label class=" form-control " style="color:greenyellow">通过</label></case>
                         <case value="12"><label class=" form-control " style="color: red">退款</label></case>
                         <case value="13"><label class=" form-control " style="color: greenyellow">归档</label></case>
-                        <!--<case value="1"><label class=" form-control " style="color: dodgerblue">修改信息</label></case>-->
-                        <!--<case value="2"><label class=" form-control " style="color: red">正在审核</label></case>-->
-                        <!--<case value="3"><label class=" form-control " style="color:seagreen">审核通过</label></case>-->
+                        <case value="1"><label class=" form-control " style="color: dodgerblue">修改信息</label></case>
+                        <case value="2"><label class=" form-control " style="color: red">正在审核</label></case>
+                        <case value="3"><label class=" form-control " style="color:seagreen">审核通过</label></case>
                         <default/>
                         default
                     </switch>
@@ -310,6 +310,7 @@
         <div class="panel-body">
             <div class="well">
                 <form class="form-horizontal" action="{:U('Admin/Comment/addComment')}" method="post" role="form">
+                    <input type="hidden" name="inputstate" value="{$student['checkinfo']}">
                     <div class="form-group" align="center">
                         <label class="col-sm-2 control-label ">评论人:</label>
                         <div class="col-sm-2">

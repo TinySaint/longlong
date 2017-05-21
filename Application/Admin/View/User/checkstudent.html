@@ -35,13 +35,13 @@
                 <!--<input type="text" class="form-control" name="introducename"-->
                 <!--value="{$student['introducename']}">-->
                 <eq name="Think.session.admin_type" value="0">
-                    <select name="introduceid" class="form-control">
+                    <select name="introducename" class="form-control">
                         <if condition="$student['introduceid'] eq 0">
                             <option value="0">无</option>
                         </if>
                         <volist name="introducelist" id="vo">
                             <option value="{$vo['uid']}"
-                            <if condition="$student['introduceid'] eq $vo['uid']" >selected='selected'</if>
+                            <if condition="$student['introduceid'] eq $vo['uid']">selected='selected'</if>
                             >{$vo['username']}</option>
                         </volist>
                     </select>
@@ -160,7 +160,7 @@
                 <select name="fileteacherid" class="form-control">
                     <option value="">无</option>
                     <volist name="fileteacherlist" id="vo">
-                        <option <eq name="vo.uid" value="$student.fileteacherid">selected='selected'</eq> value="{$vo.uid}" >{$vo['username']}</option>
+                        <option <eq name="vo.uid" value="$student.fileteacherid">selected='selected'</eq> value="{$vo.uid}">{$vo['username']}</option>
                     </volist>
                 </select>
             </div>
@@ -197,17 +197,7 @@
 
             //监听上传进度
             $(document).ready(function () {
-                $("#state").change(function () {
-                    $index = $(this).children('option:selected').val();
-                    if ($index > 11) {
-                        $("#introducebtn").text("提交审核");
-                        $("#introducebtn").append("<input type='hidden' name='checkinfo' id='checkinfo'  value='3'>");
 
-                    } else {
-                        $("#introducebtn").text("修改信息");
-                        $("#checkifno").remove();
-                    }
-                })
                 $("#upfile").on('click', function () {
                     var formData = new FormData();// 自动搜索#form里面的name值不为空的input(注意：type=file的input会被搜索到，但不能携带文件流，所以在下面我主动添加进了formData) <=ie9不支持FormData
                     formData.append('file', $('#accessory')[0].files[0]);
@@ -301,19 +291,19 @@
                 <div class="col-sm-2">
                     <select name="checkinfo" class="form-control">
                         <option value="1"
-                        <eq name="student.checkinfo" value="1">selected='selected'</eq>
+                        <eq name="student.checkinfo" value="1">checked='checked'</eq>
                         >修改信息</option>
                         <option value="2"
-                        <eq name="student.checkinfo" value="2">selected='selected'</eq>
+                        <eq name="student.checkinfo" value="2">checked='checked'</eq>
                         >审核不通过</option>
                         <option value="3"
-                        <eq name="student.checkinfo" value="3">selected='selected'</eq>
+                        <eq name="student.checkinfo" value="3">checked='checked'</eq>
                         >正在审核</option>
                         <option value="4"
-                        <eq name="student.checkinfo" value="4">selected='selected'</eq>
+                        <eq name="student.checkinfo" value="4">checked='checked'</eq>
                         >审核通过</option>
                         <option value="5"
-                        <eq name="student.checkinfo" value="5">selected='selected'</eq>
+                        <eq name="student.checkinfo" value="5">checked='checked'</eq>
                         >无效</option>
                     </select>
                 </div>
@@ -439,15 +429,10 @@
             </div>
         </div>
         <div class="form-group">
-            <eq name="Think.session.admin_type" value="2">
-                <div class="col-md-offset-3 col-md-5">
-                    <button type="submit" class="btn btn-default" id="introducebtn">修改信息</button>
-                </div>
-                <else/>
                 <div class="col-md-offset-3 col-md-5">
                     <button type="submit" class="btn btn-default">修改信息</button>
                 </div>
-            </eq>
+
 
             <div class="col-md-3">
                 <button type="reset" class="btn btn-danger">重置</button>

@@ -38,7 +38,19 @@ class LoginController extends Controller
                     $_SESSION['admin_login'] = 1;
                     $_SESSION['admin_type'] = $row['usertype'];
 //                    print_r($_SESSION);
-                    $this->success('登陆成功！', U('User/read'));
+                    switch ($row['usertype']){
+                        case 0:
+                            $this->success('登陆成功！', U('Read/adminread'));
+                            break;
+                        case 1:
+                            $this->success('登陆成功！', U('Read/fileteacherread'));
+                            break;
+                        case 2:
+                            $this->success('登陆成功！', U('Read/introduceread'));
+                            break;
+                        default:
+                    }
+
                 } else {
                     $this->error('用户或密码错误！', U('index'));
                 }
